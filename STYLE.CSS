@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+ul {
+    padding: 0px;
+    list-style-type: none;
+
+}
+
+
+li {
+    font-size: 18px;
+    padding: 10px;
+    border-bottom: 1px solid lightgray;
+
+}
+
+ul :hover {
+    background-color: lightyellow;
+}
+
+ul :active {
+    background-color: lightcyan;
+}
+
+
+input[type=checkbox] {
+    display: none;
+}
+
+
+input[type=checkbox]+label:before {
+    content: "\274c";
+    transition: .15s;
+    
+}
+
+
+input[type=checkbox]:checked+label:before {
+    content: "\2705"
+
+}
+
+
+input[type=checkbox]:checked+label {
+    color:gray;
+    text-decoration: line-through;
+ 
+}
